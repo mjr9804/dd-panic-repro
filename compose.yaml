@@ -1,0 +1,10 @@
+services:
+  app:
+    container_name: dd-panic-repro
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - .:/app
